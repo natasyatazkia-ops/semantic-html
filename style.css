@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    padding: 20px;
+    color: rgb(35, 28, 28);
+    background-color: #ff49b3;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    fontsize: 18px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.main-image {
+    width: 100%;
+    max-hight: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* .kapster-image {
+    height:100%;
+    max-width: 200px;
+} */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(234, 135, 234, 0.2);
+    border-radius: 5px;
+    padding: 18px;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+   
+}
+
+nav {
+    background-color: rgb(255, 49, 176);
+    padding: 4px;
+    border-radius: 8px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    list-style-type: none;
+    
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 200px;
+
+}
+
+.nama-usaha {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.jumbotron {
+    padding: 60px;
+    text-align: center;
+}
+
+#kapster-card {
+    display: flex;
+    gap: 30px;
+    /* flex-wrap: wrap; */
+    margin-top: 20px;    
+    /* text-align: center;
+    justify-content: center; */
+    padding-top: 30px;
+    align-items: center;
+}
+
+.card-kapster img {
+    width: 100%;
+
+}
